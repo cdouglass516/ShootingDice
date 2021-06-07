@@ -34,3 +34,66 @@ The goal of this exercise is to create classes to represent those various types 
 1. `SoreLoserPlayer`
 1. `UpperHalfPlayer`
 1. `SoreLoserUpperHalfPlayer`
+
+
+# vocabulary
+* type
+    * set of constraints on values and variables 
+    * The type of a value specifies what can be stored in a memory location
+    * the type of a variable specifies what kind of thing can be stored in a variable
+    * Examples
+        * int
+        * decimal
+        * string
+        * double
+        * bool
+        * `List<string>`
+        * `List<bool>`
+        * `Dictionary<string, bool>`
+    * In C# you can define your own class
+        * a `Person` class gives an oportunity to create a memory space for what we define as a `Person`
+* Class
+    * creates a new type
+    * Defines the "shape" of an object
+        * defines the properties and methods that an object will have
+            * Public properties and methods are called "members"
+    * Where do classes live?
+        * Inside our source code (`*.cs`)
+    * Blueprint for creating objects
+        * a class is like a blueprint or cookie cutter
+        * an "object" is like a house or a cookie
+* Object
+    * The real value that exists at run time.
+    * Where do objects live?
+        * Inside the running program
+    * objects have value
+    * Objects contain the properties, fields and methods defined inthe class
+* Constructor
+    * defined inside the class a special method that is invoked when the object is invoked
+    * has the same name as a class
+    * Invoked when you use the `new` keyword
+    * Does not have a return type
+    * You don't have to define a constructor if you don't need one.
+    * If you don't define a constructor c sharp will define one for you called the default constructor.
+    * You define a constructor when you need to perform some sort of action.
+        * maybe some logic
+        * maybe some field or property initialization
+* Method
+    * Defined in the class 
+    * Exists in the object
+    * Function that does something on or to the object
+        * within the context of an object
+* Property
+    * value on an object
+    * defined in class
+    * Exists in object
+    * has a type
+    * properties are often `public`
+    * Properties always have a `get`
+        * returns rhe value
+    * Properties usually have a `set` but don't have to.
+        * Properties that don't have a `set` or imuttable or read only
+    * properties are one way to contain the 'state' of the object
+* Field
+    * Feields are a way to store data on an object like properties and are value
+    * Used when you only need the value in object or encapsulation
